@@ -6,109 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{asset('style.css')}}" />
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<style>
-  body{
-    font-family: kantumruy,sans-serif;
-    font-size: 12px;
-  }
-  .header-content{
-    width: 100%;
-    height: 400px;
-    background-image: url('https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  .nav-link{
-    color:white;
-    font-size:20px;
-  }
-  .sidebar{
-    overflow: hidden;
-  }
-  .box{
-    box-sizing: border-box;
-    border: 10px solid transparent;
-    background-clip:padding-box;
-}
 
-nav > .nav.nav-tabs{
-
-border: none;
-  color:#fff;
-  border-radius:0;
-}
-nav > div a.nav-item.nav-link,
-nav > div a.nav-item.nav-link.active
-{
-  border: none;
-  color:black;
-  border-radius:0;
-}
-
-nav > div a.nav-item.nav-link.active:after
-{
-  content: "";
-  position: relative;
-  bottom: -60px;
-  left: -10%;
-  border: 15px solid transparent;
-  border-top-color: #e74c3c ;
-  }
-.tab-content{
-  background: #fdfdfd;
-    line-height: 25px;
-    padding:30px 25px;
-  }
-
-nav > div a.nav-item.nav-link:hover,
-nav > div a.nav-item.nav-link:focus
-  {
-  border: none;
-    background: #e74c3c;
-    color:#fff;
-    border-radius:0;
-    transition:background 0.20s linear;
-  }
-  .menu-left{
-    width:100%;
-    height: 500px;
-  }
-  .img-read{
-    width:100%;
-  }
-</style>
 <body style="background-color:#e9eaed">
 
 <div class="container" >
-  <div class="header-content">
-    <div class="top-menu" style="padding:20px">
-      <ul class="nav nav-pills float-left">
-        <li class="nav-item">
-          <img src="{{asset('images/logo.jpg')}}" style="width:50px">
-        </li>
-      </ul>
-      <ul class="nav  float-right">
-        <li class="nav-item">
-          <a class="nav-link" href="#">NEW</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">ARTICLE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">COLLECTION</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">PICTURE</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <br>
+  @include('pages.header')
 
   <div class="content-lission">
     <div class="row">
@@ -150,224 +58,8 @@ nav > div a.nav-item.nav-link:focus
       <div class="col-md-4 box sidebar" style="background-color:white;padding:10px;">
 
       <!-- ==========================Menu side left=================================== -->
-
-        <div class="menu-left">
-          dsds
-        </div>
-        <br>
-        <div class="menu-keyword">
-          <div class="card">
-            <div class="card-header">
-              <div class="float-left text-danger"><h5><i class="fa fa-refresh"></i>  Keyword</h5></div>
-              <div class="refresh-icons float-right text-danger"><i class="fa fa-refresh fa-lg"></i></div>
-            </div>
-            <div class="card-body" style="padding:5px;">
-              <div>
-                <span class="badge badge-secondary" style="padding:5px;">ព្រះគុណពុកម៉ែ</span>
-                <span class="badge badge-secondary" style="padding:5px;">ទ្រង់ប្រារព្ធលោលភិក្ខុម</span>
-                <span class="badge badge-secondary" style="padding:5px;">ទំនួញប្រែត</span>
-                <span class="badge badge-secondary" style="padding:5px;">ទំនួញសុវណ្ណសាម</span>
-                <span class="badge badge-secondary" style="padding:5px;">ធម្មទេសនា</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <br>
-
-        <!-- ==================================Recently Read================================== -->
-
-        <div class="menu-recently-read">
-          <div class="card">
-            <div class="card-header">
-              <div class="float-left text-danger"><h5><i class="fa fa-refresh"></i>  Recently List / Read</h5></div>
-              <div class="refresh-icons float-right text-danger"><i class="fa fa-refresh fa-lg"></i></div>
-            </div>
-            <div class="card-body" style="padding:5px;">
-              <div class="row">
-                <div class="col-sm-5">
-                  <div class="img-read">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;">
-                  
-                  </div>
-                </div>
-                <div class="col-sm-7" style="padding-left: 0px;">
-                  <h5 class="text-danger"><a>ererererer</a></h5>
-                  <p>inside the box. Note that this will add a scrollbar both horizontally and vertically</p>
-                </div>
-              </div>
-              <br>
-              <div class="row">
-                <div class="col-sm-5">
-                  <div class="img-read">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;">
-                  
-                  </div>
-                </div>
-                <div class="col-sm-7" style="padding-left: 0px;">
-                  <h5 class="text-danger"><a>ererererer</a></h5>
-                  <p>inside the box. Note that this will add a scrollbar both horizontally and vertically</p>
-                </div>
-              </div>
-              <br>
-              <div class="row">
-                <div class="col-sm-5">
-                  <div class="img-read">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;">
-                  
-                  </div>
-                </div>
-                <div class="col-sm-7" style="padding-left: 0px;">
-                  <h5 class="text-danger"><a>ererererer</a></h5>
-                  <p>inside the box. Note that this will add a scrollbar both horizontally and vertically</p>
-                </div>
-              </div>
-              <br>
-              <div class="row">
-                <div class="col-sm-5">
-                  <div class="img-read">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;">
-                  
-                  </div>
-                </div>
-                <div class="col-sm-7" style="padding-left: 0px;">
-                  <h5 class="text-danger"><a>ererererer</a></h5>
-                  <p>inside the box. Note that this will add a scrollbar both horizontally and vertically</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><br>
+      @include('pages.sidebar-left')
         
-        <!-- ================================advertisement ========================================== -->
-        <div class="card" style="width:100%;height:auto;">
-          <div class="card-body" style="padding:0px;">
-            <div>
-              <img src="https://iotcdn.oss-ap-southeast-1.aliyuncs.com/shampoo.jpg"/ style="width:100%">
-            </div>
-          </div>
-        </div>
-
-        <!-- =================================Live Radio ====================================-->
-        <br>
-        <div class="Live-radio">
-          <div class="card">
-            <div class="card-header">
-              <div class="float-left text-danger"><h5><i class="fa fa-refresh"></i> Live Radio</h5></div>
-              <div class="refresh-icons float-right text-danger"><i class="fa fa-refresh fa-lg"></i></div>
-            </div>
-            <div class="card-body" style="padding:5px;padding-top:10px;">
-              <div class="row" >
-                <div class="col-sm-4">
-                  <div class="img-read" style="width:80px;height:auto;border:1px solid lightgrey;padding:5px;">
-                  <img class="card-img-bottom" src="{{asset('images/logo.jpg')}}" alt="Card image" style="width:100%;">
-                  
-                  </div>
-                </div>
-                <div class="col-sm-8" style="padding-left: 0px;">
-                  <h5 class="text-danger"><a>ererererer</a></h5>
-                  <p>inside the box. Note that this will add a scrollbar both horizontally and vertically</p>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="img-read" style="width:80px;height:auto;border:1px solid lightgrey;padding:5px;">
-                  <img class="card-img-bottom" src="{{asset('images/logo.jpg')}}" alt="Card image" style="width:100%;">
-                  
-                  </div>
-                </div>
-                <div class="col-sm-8" style="padding-left: 0px;">
-                  <h5 class="text-danger"><a>ererererer</a></h5>
-                  <p>inside the box. Note that this will add a scrollbar both horizontally and vertically</p>
-                </div>
-              </div>
-        
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="img-read" style="width:80px;height:auto;border:1px solid lightgrey;padding:5px;">
-                  <img class="card-img-bottom" src="{{asset('images/logo.jpg')}}" alt="Card image" style="width:100%;">
-                  
-                  </div>
-                </div>
-                <div class="col-sm-8" style="padding-left: 0px;">
-                  <h5 class="text-danger"><a>ererererer</a></h5>
-                  <p>inside the box. Note that this will add a scrollbar both horizontally and vertically</p>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="img-read" style="width:80px;height:auto;border:1px solid lightgrey;padding:5px;">
-                  <img class="card-img-bottom" src="{{asset('images/logo.jpg')}}" alt="Card image" style="width:100%;">
-                  
-                  </div>
-                </div>
-                <div class="col-sm-8" style="padding-left: 0px;">
-                  <h5 class="text-danger"><a>ererererer</a></h5>
-                  <p>inside the box. Note that this will add a scrollbar both horizontally and vertically</p>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="img-read" style="width:80px;height:auto;border:1px solid lightgrey;padding:5px;">
-                  <img class="card-img-bottom" src="{{asset('images/logo.jpg')}}" alt="Card image" style="width:100%;">
-                  
-                  </div>
-                </div>
-                <div class="col-sm-8" style="padding-left: 0px;">
-                  <h5 class="text-danger"><a>ererererer</a></h5>
-                  <p>inside the box. Note that this will add a scrollbar both horizontally and vertically</p>
-                </div>
-              </div>
-              <hr/>
-              <div class="readmore text-center">
-                <a href="readmore" class="text-danger "><i class="fa fa-download"></i>មើលម្ដងទៀត</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--====================================== notification =========================== -->
-
-        <div class="notification">
-          <div class="card">
-            <div class="card-header">
-              <div class="float-left text-danger"><h5><i class="fa fa-notification"></i> All Visitors</h5></div>
-              <div class="refresh-icons float-right text-danger"><i class="fa fa-refresh fa-lg"></i></div>
-            </div>
-            <div class="card-body" style="padding:5px;padding-top:10px;">
-              <div class="row" >
-                <div class="col-sm-4">
-                  <div class="img-read" style="width:80px;height:auto;border:1px solid lightgrey;padding:5px;">
-                  <img class="card-img-bottom" src="{{asset('images/logo.jpg')}}" alt="Card image" style="width:100%;">
-                  
-                  </div>
-                </div>
-                <div class="col-sm-8" style="padding-left: 0px;">
-                  <h5 class="text-danger"><a>ererererer</a></h5>
-                  <p>inside the box. Note that this will add a scrollbar both horizontally and vertically</p>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-sm-4">
-                  <div class="img-read" style="width:80px;height:auto;border:1px solid lightgrey;padding:5px;">
-                  <img class="card-img-bottom" src="{{asset('images/logo.jpg')}}" alt="Card image" style="width:100%;">
-                  
-                  </div>
-                </div>
-                <div class="col-sm-8" style="padding-left: 0px;">
-                  <h5 class="text-danger"><a>ererererer</a></h5>
-                  <p>inside the box. Note that this will add a scrollbar both horizontally and vertically</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
       <!-- Content right side -->
 
       <div class="col-md-8 box" style="background-color:white;padding:5px;">
@@ -376,9 +68,15 @@ nav > div a.nav-item.nav-link:focus
             <div class="row" style="padding:10px;">
               <div class="col-sm-6">
                 <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
+                  <div class="card-body">
+                    <div class="image-content">
+                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
+                    </div>
+                    <div class="social">
+                      <div class="float-right">
+                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
+                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
+                      </div>
                     </div>
                     <div class="text" style="padding:5px;">
                       <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
@@ -391,41 +89,15 @@ nav > div a.nav-item.nav-link:focus
 
               <div class="col-sm-6">
                 <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
+                  <div class="card-body">
+                    <div class="image-content">
+                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
                     </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" style="padding:10px;">
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
+                    <div class="social">
+                      <div class="float-right">
+                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
+                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
+                      </div>
                     </div>
                     <div class="text" style="padding:5px;">
                       <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
@@ -440,9 +112,15 @@ nav > div a.nav-item.nav-link:focus
             <div class="row" style="padding:10px;">
               <div class="col-sm-6">
                 <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
+                  <div class="card-body">
+                    <div class="image-content">
+                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
+                    </div>
+                    <div class="social">
+                      <div class="float-right">
+                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
+                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
+                      </div>
                     </div>
                     <div class="text" style="padding:5px;">
                       <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
@@ -455,41 +133,15 @@ nav > div a.nav-item.nav-link:focus
 
               <div class="col-sm-6">
                 <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
+                  <div class="card-body">
+                    <div class="image-content">
+                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
                     </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" style="padding:10px;">
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
+                    <div class="social">
+                      <div class="float-right">
+                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
+                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
+                      </div>
                     </div>
                     <div class="text" style="padding:5px;">
                       <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
@@ -504,9 +156,15 @@ nav > div a.nav-item.nav-link:focus
             <div class="row" style="padding:10px;">
               <div class="col-sm-6">
                 <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
+                  <div class="card-body">
+                    <div class="image-content">
+                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
+                    </div>
+                    <div class="social">
+                      <div class="float-right">
+                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
+                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
+                      </div>
                     </div>
                     <div class="text" style="padding:5px;">
                       <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
@@ -519,9 +177,59 @@ nav > div a.nav-item.nav-link:focus
 
               <div class="col-sm-6">
                 <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
+                  <div class="card-body">
+                    <div class="image-content">
+                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
+                    </div>
+                    <div class="social">
+                      <div class="float-right">
+                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
+                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
+                      </div>
+                    </div>
+                    <div class="text" style="padding:5px;">
+                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
+                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="padding:10px;">
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="image-content">
+                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
+                    </div>
+                    <div class="social">
+                      <div class="float-right">
+                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
+                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
+                      </div>
+                    </div>
+                    <div class="text" style="padding:5px;">
+                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
+                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="image-content">
+                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
+                    </div>
+                    <div class="social">
+                      <div class="float-right">
+                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
+                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
+                      </div>
                     </div>
                     <div class="text" style="padding:5px;">
                       <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
@@ -972,19 +680,25 @@ nav > div a.nav-item.nav-link:focus
       </div>
     </div>
     <br>
-    <!-- footer -->
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="card text-center">
-          <div class="card-body" style="padding:10px;background-color:red;color:white;">
-          © Founded in June B.E.2555 by 5000-years.org (Khmer Buddhist).
-          </div>
-        </div>
-      </div>
-    </div>
-    
+
+    @include('pages.footer')
   </div>
 </div>
 
 </body>
+
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "10px";
+    document.getElementById("logo").style.fontSize = "10px";
+  } else {
+    document.getElementById("navbar").style.padding = "5px";
+    document.getElementById("logo").style.fontSize = "10px";
+  }
+}
+</script>
 </html>
