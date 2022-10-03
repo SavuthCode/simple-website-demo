@@ -23,6 +23,9 @@ Route::get('/home-page',function() {
     return view('pages.home');
 });
 
+	
+Route::resource('video', 'VideoController');
+
 Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function(){
     Route::get('/dashboard','Admin\AdminController@dashboard');
 });

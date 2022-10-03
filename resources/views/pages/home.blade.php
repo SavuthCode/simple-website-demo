@@ -14,15 +14,17 @@
 </head>
 
 <body style="background-color:#e9eaed">
-
+@include('pages.header')
 <div class="container" >
-  @include('pages.header')
+  <div class="slid-content">
+
+  </div>
 
   <div class="content-lission">
     <div class="row">
       <div class="col-md-4 box" style="background-color:white;padding:10px;">
         <div class="row">
-          <div class="col-sm-2" style="border-right: solid 1px red">
+          <div class="col-sm-2" style="border-right: solid 1px red;">
             <div class="icon" style="width:50px;height:40px;">
               <i class="fas fa-home fa-3x" style="color:red"></i>
             </div>
@@ -64,454 +66,21 @@
 
       <div class="col-md-8 box" style="background-color:white;padding:5px;">
         <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <div class="row" style="padding:10px;">
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="image-content">
-                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
-                    </div>
-                    <div class="social">
-                      <div class="float-right">
-                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
-                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
-                      </div>
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
+          <!--============================================= Tab last new===================================-->
+              @include("pages.tabs.last-new.index")
+          <!--=========================================== End Tab last new ================================-->
 
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <!-- ========================================= Tab Book ========================================= -->
+            @include("pages.tabs.book.index")
+          <!-- ========================================= End Tab Book =====================================-->
 
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="image-content">
-                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
-                    </div>
-                    <div class="social">
-                      <div class="float-right">
-                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
-                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
-                      </div>
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
+          <!-- ========================================= Tab MP3 ========================================= -->
+            @include("pages.tabs.mp3.index")
+          <!-- ========================================= End Tab MP3 =====================================-->
 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" style="padding:10px;">
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="image-content">
-                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
-                    </div>
-                    <div class="social">
-                      <div class="float-right">
-                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
-                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
-                      </div>
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="image-content">
-                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
-                    </div>
-                    <div class="social">
-                      <div class="float-right">
-                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
-                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
-                      </div>
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" style="padding:10px;">
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="image-content">
-                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
-                    </div>
-                    <div class="social">
-                      <div class="float-right">
-                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
-                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
-                      </div>
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="image-content">
-                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
-                    </div>
-                    <div class="social">
-                      <div class="float-right">
-                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
-                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
-                      </div>
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="row" style="padding:10px;">
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="image-content">
-                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
-                    </div>
-                    <div class="social">
-                      <div class="float-right">
-                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
-                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
-                      </div>
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="image-content">
-                      <img src="{{asset('images/image-content.jpg')}}" alt="Card image" style="width:100%;height:200px;" />
-                    </div>
-                    <div class="social">
-                      <div class="float-right">
-                        <img src="{{asset('images/download-removebg-preview.png')}}" style="width:20px;height:20px;"/>
-                        <img src="{{asset('images/Twitter-logo-png.png')}}" style="width:20px;height:20px;"/>
-                      </div>
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-          <div class="row">
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
-          <div class="row">
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="card">
-                  <div class="card-body" style="padding:0px;">
-                    <div class="image">
-                      <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:180px;">
-                    </div>
-                    <div class="text" style="padding:5px;">
-                      <h5 class="card-title"><a href="" style="color:red">ចក្ដវាកជាតក</a></h5>
-                      <p class="card-text">Public Date: 2022-09-20 <br>ព្រះសាស្ដាកាលស្ដេចគង់នៅវត្តជេតពន ទ្រង់ប្រារព្ធលោលភិក្ខុ (ភិក្ខុល្មោភ) មួយរូប បានត្រាស់ព្រះ</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- ========================================= Tab videos ========================================= -->
+            @include("pages.tabs.videos.index")
+          <!-- ========================================= End Tab videos =====================================-->
         </div>
       </div>
     </div>
@@ -522,82 +91,82 @@
         <div class="card-body">
         <div class="row">
           <div class="col-sm-12">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <div id="myCarouselw" class="carouselww slidewwwww" data-ride="carousel">
             <!-- Indicators -->
-            <ul class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
+            <ul class="carousel-indicatorsww">
+              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+              <!-- <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li> -->
             </ul>
 
             <!-- The slideshow -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+            <div class="carousel-innewwr">
+              <div class="carousel-itemw active">
+                <div class="row" style="margin-left: 25px;margin-right: 24px;">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s1.jpg')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                   <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                   <img src="{{asset('images/new/s2.jpg')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s3.jpg')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s4.png')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s5.jpg')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s6.jpg')}}" alt="Chicago">
                   </div>
                 </div>
               </div>
               <div class="carousel-item">
-              <div class="row">
-              <div class="row">
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+              <div class="row" style="margin-left: 0px;margin-right: 0px;">
+              <div class="row" style="margin-left: 0px;margin-right: 0px;">
+              <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s1.jpg')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                   <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                   <img src="{{asset('images/new/s2.jpg')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s3.jpg')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s4.png')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s5.jpg')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s6.jpg')}}" alt="Chicago">
                   </div>
                 </div>
                 </div>
               </div>
               <div class="carousel-item">
-              <div class="row">
-              <div class="row">
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+              <div class="row" style="margin-left: 0px;margin-right: 0px;">
+              <div class="row" style="margin-left: 0px;margin-right: 0px;">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s1.jpg')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                   <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                   <img src="{{asset('images/new/s2.jpg')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s3.jpg')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s4.png')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s5.jpg')}}" alt="Chicago">
                   </div>
-                  <div class="col-sm-2">
-                    <img src="{{asset('images/logo.jpg')}}" alt="Chicago" style="width:100%">
+                  <div class="col-sm-2 col2-slide">
+                    <img src="{{asset('images/new/s6.jpg')}}" alt="Chicago">
                   </div>
                 </div>
                 </div>
@@ -605,8 +174,8 @@
             </div>
 
             <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev" >
+              <span class="carousel-control-prev-icon" ></span>
             </a>
             <a class="carousel-control-next" href="#myCarousel" data-slide="next">
               <span class="carousel-control-next-icon"></span>
@@ -625,54 +194,169 @@
         <div class="card-body">
           <ul class="nav nav-tabs">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#home">Recomment Website</a>
+              <a class="nav-link active" data-toggle="tab" href="#home"><i class="fa fa-heart"></i>  Recomment Website</a>
             </li>
           </ul>
-
           <!-- Tab panes -->
           <div class="tab-content" style="margin-top:-40px;">
             <div id="home" class="container tab-pane active"><br>
               <div class="row">
-                <div class="col-sm-2">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:100px;">
+                <div class="col-sm-2 clo2-recoment">
+                  <a class="thumb" href="#"><img src="{{asset('images/img1.jpg')}}" alt="" style="width:100%;height:100%">
+                    <span>
+                      <div class="lightbox">
+                          <div class="text-center">
+                            <img src="{{asset('images/img1.jpg')}}" alt="" style="width:70%;margin-top:30px;">
+                            <h5 style="color:white;margin-top:5px;">http://test-xom-rtete-rrrr.com</h5>
+                          </div>
+                      </div>
+                    </span>
+                  </a>
                 </div>
-                <div class="col-sm-2">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:100px;">
+                <div class="col-sm-2 clo2-recoment">
+                  <a class="thumb" href="#"><img src="{{asset('images/img4.png')}}" alt="" style="width:100%;height:100%">
+                    <span>
+                      <div class="lightbox">
+                          <div class="text-center">
+                            <img src="{{asset('images/img4.png')}}" alt="" style="width:70%;margin-top:10px;">
+                            <h5 style="color:white;margin-top:5px;">http://test-xom-rtete-rrrr.com</h5>
+                          </div>
+                      </div>
+                    </span>
+                  </a>
                 </div>
-                <div class="col-sm-2">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:100px;">
+
+                <div class="col-sm-2 clo2-recoment">
+                  <a class="thumb" href="#"><img src="{{asset('images/img5.png')}}" alt="" style="width:100%;height:100%">
+                    <span>
+                      <div class="lightbox">
+                          <div class="text-center">
+                            <img src="{{asset('images/img5.png')}}" alt="" style="width:70%;height:100%;margin-top:10px;">
+                            <h5 style="color:white;margin-top:5px;">http://test-xom-rtete-rrrr.com</h5>
+                          </div>
+                      </div>
+                    </span>
+                  </a>
                 </div>
-                <div class="col-sm-2">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:100px;">
+
+                <div class="col-sm-2 clo2-recoment">
+                  <a class="thumb" href="#"><img src="{{asset('images/img4.png')}}" alt="" style="width:100%;height:100%">
+                    <span>
+                      <div class="lightbox">
+                          <div class="text-center">
+                            <img src="{{asset('images/img4.png')}}" alt="" style="width:70%;margin-top:10px;">
+                            <h5 style="color:white;margin-top:5px;">http://test-xom-rtete-rrrr.com</h5>
+                          </div>
+                      </div>
+                    </span>
+                  </a>
                 </div>
-                <div class="col-sm-2">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:100px;">
+
+                <div class="col-sm-2 clo2-recoment">
+                  <a class="thumb" href="#"><img src="{{asset('images/img5.png')}}" alt="" style="width:100%;height:100%">
+                    <span>
+                      <div class="lightbox">
+                          <div class="text-center">
+                            <img src="{{asset('images/img5.png')}}" alt="" style="width:70%;height:100%;margin-top:10px;">
+                            <h5 style="color:white;margin-top:5px;">http://test-xom-rtete-rrrr.com</h5>
+                          </div>
+                      </div>
+                    </span>
+                  </a>
                 </div>
-                <div class="col-sm-2">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:100px;">
+
+                <div class="col-sm-2 clo2-recoment">
+                  <a class="thumb" href="#"><img src="{{asset('images/img4.png')}}" alt="" style="width:100%;height:100%">
+                    <span>
+                      <div class="lightbox">
+                          <div class="text-center">
+                            <img src="{{asset('images/img4.png')}}" alt="" style="width:70%;margin-top:10px;">
+                            <h5 style="color:white;margin-top:5px;">http://test-xom-rtete-rrrr.com</h5>
+                          </div>
+                      </div>
+                    </span>
+                  </a>
                 </div>
               </div>
-<br>
               <div class="row">
-                <div class="col-sm-2">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:100px;">
+                <div class="col-sm-2 clo2-recoment">
+                  <a class="thumb" href="#"><img src="{{asset('images/img1.jpg')}}" alt="" style="width:100%;height:100%">
+                    <span>
+                      <div class="lightbox">
+                          <div class="text-center">
+                            <img src="{{asset('images/img1.jpg')}}" alt="" style="width:70%;margin-top:30px;">
+                            <h5 style="color:white;margin-top:5px;">http://test-xom-rtete-rrrr.com</h5>
+                          </div>
+                      </div>
+                    </span>
+                  </a>
                 </div>
-                <div class="col-sm-2">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:100px;">
+                <div class="col-sm-2 clo2-recoment">
+                  <a class="thumb" href="#"><img src="{{asset('images/img4.png')}}" alt="" style="width:100%;height:100%">
+                    <span>
+                      <div class="lightbox">
+                          <div class="text-center">
+                            <img src="{{asset('images/img4.png')}}" alt="" style="width:70%;margin-top:10px;">
+                            <h5 style="color:white;margin-top:5px;">http://test-xom-rtete-rrrr.com</h5>
+                          </div>
+                      </div>
+                    </span>
+                  </a>
                 </div>
-                <div class="col-sm-2">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:100px;">
+
+                <div class="col-sm-2 clo2-recoment">
+                  <a class="thumb" href="#"><img src="{{asset('images/img5.png')}}" alt="" style="width:100%;height:100%">
+                    <span>
+                      <div class="lightbox">
+                          <div class="text-center">
+                            <img src="{{asset('images/img5.png')}}" alt="" style="width:70%;height:100%;margin-top:10px;">
+                            <h5 style="color:white;margin-top:5px;">http://test-xom-rtete-rrrr.com</h5>
+                          </div>
+                      </div>
+                    </span>
+                  </a>
                 </div>
-                <div class="col-sm-2">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:100px;">
+
+                <div class="col-sm-2 clo2-recoment">
+                  <a class="thumb" href="#"><img src="{{asset('images/img4.png')}}" alt="" style="width:100%;height:100%">
+                    <span>
+                      <div class="lightbox">
+                          <div class="text-center">
+                            <img src="{{asset('images/img4.png')}}" alt="" style="width:70%;margin-top:10px;">
+                            <h5 style="color:white;margin-top:5px;">http://test-xom-rtete-rrrr.com</h5>
+                          </div>
+                      </div>
+                    </span>
+                  </a>
                 </div>
-                <div class="col-sm-2">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:100px;">
+
+                <div class="col-sm-2 clo2-recoment">
+                  <a class="thumb" href="#"><img src="{{asset('images/img5.png')}}" alt="" style="width:100%;height:100%">
+                    <span>
+                      <div class="lightbox">
+                          <div class="text-center">
+                            <img src="{{asset('images/img5.png')}}" alt="" style="width:70%;height:100%;margin-top:10px;">
+                            <h5 style="color:white;margin-top:5px;">http://test-xom-rtete-rrrr.com</h5>
+                          </div> 
+                      </div>
+                    </span>
+                  </a>
                 </div>
-                <div class="col-sm-2">
-                  <img class="card-img-bottom" src="{{asset('images/placeholder.png')}}" alt="Card image" style="width:100%;height:100px;">
+
+                <div class="col-sm-2 clo2-recoment">
+                  <a class="thumb" href="#"><img src="{{asset('images/img4.png')}}" alt="" style="width:100%;height:100%">
+                    <span>
+                      <div class="lightbox">
+                          <div class="text-center">
+                            <img src="{{asset('images/img4.png')}}" alt="" style="width:70%;margin-top:10px;">
+                            <h5 style="color:white;margin-top:5px;">http://test-xom-rtete-rrrr.com</h5>
+                          </div>
+                      </div>
+                    </span>
+                  </a>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -688,15 +372,21 @@
 </body>
 
 <script>
+
+$(document).ready(function(){
+  // $(".book-card").hover(function(){
+  //   $('.book-social').css("display","block");
+  // });
+});
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "10px";
+    document.getElementById("navbar").style.padding = "5px";
     document.getElementById("logo").style.fontSize = "10px";
   } else {
-    document.getElementById("navbar").style.padding = "5px";
+    document.getElementById("navbar").style.padding = "0px";
     document.getElementById("logo").style.fontSize = "10px";
   }
 }
